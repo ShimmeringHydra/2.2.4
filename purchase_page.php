@@ -40,6 +40,6 @@ else
 }
 
 
-echo "Click <a href='221indexB.html'>here to return to the gallery</a>.<br />";
+echo "<TH align='right'>Click <a href='221indexB.html'>here to return to the gallery</a>.</TH><br />";
 
 ?>
