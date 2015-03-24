@@ -1,0 +1,537 @@
+<!--
+221indexB.html demonstrates basic JavaScript and CSS
+Unpublished work (c)2013 Project Lead The Way
+CSE Activity 2.2.1 HTML5andJavaScript
+Version 12/19/2013 
+-->
+
+<html>
+<head>
+	<style = "text/css">
+		#img1popout {
+			z-index: 5;
+			position: absolute;
+			width: 550px;
+			height: 300px;
+			top: 50px;
+			border: 1px dashed #000099;
+			background-color: #ddddff;
+		}
+		#img1popin{}
+		
+		#img2popout {
+			z-index: 5;
+			position: absolute;
+			width: 550px;
+			height: 300px;
+			top: 50px;
+			border: 1px dashed #000099;
+			background-color: #ddddff;
+		}
+		#img2popin{}
+			
+		#img3popout {	
+			z-index: 5;
+			position: absolute;
+			width: 550px;
+			height: 300px;
+			top: 50px;
+			border: 1px dashed #000099;
+			background-color: #ddddff;
+		}
+		#img3popin{}
+		
+		#img4popout {
+			z-index: 5;
+			position: absolute;
+			width: 550px;
+			height: 300px;
+			top: 50px;
+			border: 1px dashed #000099;
+			background-color: #ddddff;
+		}
+		#img4popin{}
+		
+		#img5popout {
+			z-index: 5;
+			position: absolute;
+			width: 550px;
+			height: 300px;
+			top: 50px;
+			border: 1px dashed #000099;
+			background-color: #ddddff;
+		}
+		#img5popin{}
+		
+		#img6popout {
+			z-index: 5;
+			position: absolute;
+			width: 550px;
+			height: 300px;
+			top: 50px;
+			border: 1px dashed #000099;
+			background-color: #ddddff;
+		}
+		#img6popin{}
+		
+		#img7popout {
+			z-index: 5;
+			position: absolute;
+			width: 550px;
+			height: 300px;
+			top: 50px;
+			border: 1px dashed #000099;
+			background-color: #ddddff;
+		}
+		#img7popin{}
+		
+		#img8popout {
+			z-index: 5;
+			position: absolute;
+			width: 550px;
+			height: 300px;
+			top: 50px;
+			border: 1px dashed #000099;
+			background-color: #ddddff;
+		}
+		#img8popin{}
+		
+		#img9popout {
+			z-index: 5;
+			position: absolute;
+			width: 550px;
+			height: 300px;
+			top: 50px;
+			border: 1px dashed #000099;
+			background-color: #ddddff;
+		}
+		#img9popin{}
+		
+		#img10popout {
+			z-index: 5;
+			position: absolute;
+			width: 550px;
+			height: 300px;
+			top: 50px;
+			border: 1px dashed #000099;
+			background-color: #ddddff;
+		}
+		#img10popin{}
+		
+		#img11popout {
+			z-index: 5;
+			position: absolute;
+			width: 550px;
+			height: 300px;
+			top: 50px;
+			border: 1px dashed #000099;
+			background-color: #ddddff;
+		}
+		#img11popin{}
+		
+		#img12popout {
+			z-index: 5;
+			position: absolute;
+			width: 550px;
+			height: 300px;
+			top: 50px;
+			border: 1px dashed #000099;
+			background-color: #ddddff;
+		}
+		#img12popin{}
+		
+		#img13popout {
+			z-index: 5;
+			position: absolute;
+			width: 550px;
+			height: 300px;
+			top: 50px;
+			border: 1px dashed #000099;
+			background-color: #ddddff;
+		}
+		#img13popin{}
+		
+		#img14popout {
+			z-index: 5;
+			position: absolute;
+			width: 550px;
+			height: 300px;
+			top: 50px;
+			border: 1px dashed #000099;
+			background-color: #ddddff;
+		}
+		#img14popin{}
+		
+		#img15popout {
+			z-index: 5;
+			position: absolute;
+			width: 550px;
+			height: 300px;
+			top: 50px;
+			border: 1px dashed #000099;
+			background-color: #ddddff;
+		}
+		#img15popin{}
+		
+	</style>
+	<script type = "text/javascript">
+		function initPopout() 
+		{
+			var thumb1 = document.getElementById("image1");
+			thumb1.onmouseover = showDetailedView;
+		}
+		function initPopout2()
+		{
+			var thumb2 = document.getElementById("image2");
+			thumb2.onmouseover = showDetailedView2;
+		}
+		function initPopout3() 
+		{
+			var thumb3 = document.getElementById("image3");
+			thumb3.onmouseover = showDetailedView3;
+		}
+		function initPopout4()
+		{
+			var thumb4 = document.getElementById("image4");
+			thumb4.onmouseover = showDetailedView4;	
+		}
+		function initPopout5()
+		{
+			var thumb5 = document.getElementById("image5");
+			thumb5.onmouseover = showDetailedView5;	
+		}
+		function initPopout6()
+		{
+			var thumb6 = document.getElementById("image6");
+			thumb6.onmouseover = showDetailedView6;	
+		}
+		function initPopout7()
+		{
+			var thumb7 = document.getElementById("image7");
+			thumb7.onmouseover = showDetailedView7;	
+		}
+		function initPopout8()
+		{
+			var thumb8 = document.getElementById("image8");
+			thumb8.onmouseover = showDetailedView8;	
+		}
+		function initPopout9()
+		{
+			var thumb9 = document.getElementById("image9");
+			thumb9.onmouseover = showDetailedView9;	
+		}
+		function initPopout10()
+		{
+			var thumb10 = document.getElementById("image10");
+			thumb10.onmouseover = showDetailedView10;	
+		}
+		function initPopout11()
+		{
+			var thumb11 = document.getElementById("image11");
+			thumb11.onmouseover = showDetailedView11;	
+		}
+		function initPopout12()
+		{
+			var thumb12 = document.getElementById("image12");
+			thumb12.onmouseover = showDetailedView12;	
+		}
+		function initPopout13()
+		{
+			var thumb13 = document.getElementById("image13");
+			thumb13.onmouseover = showDetailedView13;	
+		}
+		function initPopout14()
+		{
+			var thumb14 = document.getElementById("image14");
+			thumb14.onmouseover = showDetailedView14;	
+		}function initPopout15()
+		{
+			var thumb15 = document.getElementById("image15");
+			thumb15.onmouseover = showDetailedView15;	
+		}
+		function showDetailedView() 
+		{
+			var im1 = document.getElementById("img1popin");
+			im1.id = "img1popout";
+			im1.innerHTML = "<br /><TABLE><TR><TH rowspan='3'><img src='aprilla/pic1.jpg' width='250'><TH align='left'>Artist's Name: <TH align='left'>Aprill Aronie<TR><TH align='left'>File Name: <TH align='left'>pic1.jpg<TR></TABLE> ";
+			var popOut = document.getElementById("img1popout");
+			popOut.onmouseout = hideDetailedView;
+		}
+		function showDetailedView2()
+		{
+			var im2 = document.getElementById("img2popin");
+			im2.id = "img2popout";
+			im2.innerHTML = "<br /><TABLE><TR><TH rowspan='3'><img src='aprilla/pic2.jpg' width='250'><TH align='left'>Artist's Name: <TH align='left'>Aprill Aronie<TR><TH align='left'>File Name: <TH align='left'>pic2.jpg<TR></TABLE> ";
+			var popOut = document.getElementById("img2popout");
+			popOut.onmouseout = hideDetailedView2;
+		}
+		function showDetailedView3()
+		{
+			var im3 = document.getElementById("img3popin");
+			im3.id = "img3popout";
+			im3.innerHTML = "<br /><TABLE><TR><TH rowspan='3'><img src='aprilla/pic3.jpg' width='250'><TH align='left'>Artist's Name: <TH align='left'>Aprill Aronie<TR><TH align='left'>File Name: <TH align='left'>pic3.jpg<TR></TABLE> ";
+			var popOut = document.getElementById("img3popout");
+			popOut.onmouseout = hideDetailedView3;
+		}
+		function showDetailedView4()
+		{
+			var im4 = document.getElementById("img4popin");
+			im4.id = "img4popout";
+			im4.innerHTML = "<br /><TABLE><TR><TH rowspan='3'><img src='aprilla/pic4.jpg' width='250'><TH align='left'>Artist's Name: <TH align='left'>Aprill Aronie<TR><TH align='left'>File Name: <TH align='left'>pic4.jpg<TR></TABLE> ";
+			var popOut = document.getElementById("img4popout");
+			popOut.onmouseout = hideDetailedView4;					
+		}
+		function showDetailedView5() 
+		{
+			var im5 = document.getElementById("img5popin");
+			im5.id = "img5popout";
+			im5.innerHTML = "<br /><TABLE><TR><TH rowspan='3'><img src='aprilla/pic5.jpg' width='250'><TH align='left'>Artist's Name: <TH align='left'>Aprill Aronie<TR><TH align='left'>File Name: <TH align='left'>pic5.jpg<TR></TABLE> ";
+			var popOut = document.getElementById("img5popout");
+			popOut.onmouseout = hideDetailedView5;
+		}
+		function showDetailedView6() 
+		{
+			var im6 = document.getElementById("img6popin");
+			im6.id = "img6popout";
+			im6.innerHTML = "<br /><TABLE><TR><TH rowspan='3'><img src='aprilla/pic6.jpg' width='250'><TH align='left'>Artist's Name: <TH align='left'>Aprill Aronie<TR><TH align='left'>File Name: <TH align='left'>pic6.jpg<TR></TABLE> ";
+			var popOut = document.getElementById("img6popout");
+			popOut.onmouseout = hideDetailedView6;
+		}
+		function showDetailedView7() 
+		{
+			var im7 = document.getElementById("img7popin");
+			im7.id = "img7popout";
+			im7.innerHTML = "<br /><TABLE><TR><TH rowspan='3'><img src='aprilla/pic7.jpg' width='250' height='250'><TH align='left'>Artist's Name: <TH align='left'>Aprill Aronie<TR><TH align='left'>File Name: <TH align='left'>pic7.jpg<TR></TABLE> ";
+			var popOut = document.getElementById("img7popout");
+			popOut.onmouseout = hideDetailedView7;
+		}
+		function showDetailedView8() 
+		{
+			var im8 = document.getElementById("img8popin");
+			im8.id = "img8popout";
+			im8.innerHTML = "<br /><TABLE><TR><TH rowspan='3'><img src='aprilla/pic8.jpg' width='250'><TH align='left'>Artist's Name: <TH align='left'>Aprill Aronie<TR><TH align='left'>File Name: <TH align='left'>pic8.jpg<TR></TABLE> ";
+			var popOut = document.getElementById("img8popout");
+			popOut.onmouseout = hideDetailedView8;
+		}
+		function showDetailedView9() 
+		{
+			var im9 = document.getElementById("img9popin");
+			im9.id = "img9popout";
+			im9.innerHTML = "<br /><TABLE><TR><TH rowspan='3'><img src='aprilla/pic9.jpg' width='250' height='250'><TH align='left'>Artist's Name: <TH align='left'>Aprill Aronie<TR><TH align='left'>File Name: <TH align='left'>pic9.jpg<TR></TABLE> ";
+			var popOut = document.getElementById("img9popout");
+			popOut.onmouseout = hideDetailedView9;
+		}
+		function showDetailedView10() 
+		{
+			var im10 = document.getElementById("img10popin");
+			im10.id = "img10popout";
+			im10.innerHTML = "<br /><TABLE><TR><TH rowspan='3'><img src='aprilla/pic10.jpg' width='250'><TH align='left'>Artist's Name: <TH align='left'>Aprill Aronie<TR><TH align='left'>File Name: <TH align='left'>pic10.jpg<TR></TABLE> ";
+			var popOut = document.getElementById("img10popout");
+			popOut.onmouseout = hideDetailedView10;
+		}
+		function showDetailedView11() 
+		{
+			var im11 = document.getElementById("img11popin");
+			im11.id = "img11popout";
+			im11.innerHTML = "<br /><TABLE><TR><TH rowspan='3'><img src='aprilla/pic11.jpg' width='250'><TH align='left'>Artist's Name: <TH align='left'>Aprill Aronie<TR><TH align='left'>File Name: <TH align='left'>pic11.jpg<TR></TABLE> ";
+			var popOut = document.getElementById("img11popout");
+			popOut.onmouseout = hideDetailedView11;
+		}
+		function showDetailedView12() 
+		{
+			var im12 = document.getElementById("img12popin");
+			im12.id = "img12popout";
+			im12.innerHTML = "<br /><TABLE><TR><TH rowspan='3'><img src='aprilla/pic12.jpg' width='250' height='250'><TH align='left'>Artist's Name: <TH align='left'>Aprill Aronie<TR><TH align='left'>File Name: <TH align='left'>pic12.jpg<TR></TABLE> ";
+			var popOut = document.getElementById("img12popout");
+			popOut.onmouseout = hideDetailedView12;
+		}
+		function showDetailedView13() 
+		{
+			var im13 = document.getElementById("img13popin");
+			im13.id = "img13popout";
+			im13.innerHTML = "<br /><TABLE><TR><TH rowspan='3'><img src='aprilla/pic13.jpg' width='250'><TH align='left'>Artist's Name: <TH align='left'>Aprill Aronie<TR><TH align='left'>File Name: <TH align='left'>pic13.jpg<TR></TABLE> ";
+			var popOut = document.getElementById("img13popout");
+			popOut.onmouseout = hideDetailedView13;
+		}
+		function showDetailedView14() 
+		{
+			var im14 = document.getElementById("img14popin");
+			im14.id = "img14popout";
+			im14.innerHTML = "<br /><TABLE><TR><TH rowspan='3'><img src='aprilla/pic14.jpg' width='250'><TH align='left'>Artist's Name: <TH align='left'>Aprill Aronie<TR><TH align='left'>File Name: <TH align='left'>pic14.jpg<TR></TABLE> ";
+			var popOut = document.getElementById("img14popout");
+			popOut.onmouseout = hideDetailedView14;
+		}
+		function showDetailedView15() 
+		{
+			var im15 = document.getElementById("img15popin");
+			im15.id = "img15popout";
+			im15.innerHTML = "<br /><TABLE><TR><TH rowspan='3'><img src='aprilla/pic15.jpg' width='250'><TH align='left'>Artist's Name: <TH align='left'>Aprill Aronie<TR><TH align='left'>File Name: <TH align='left'>pic15.jpg<TR></TABLE> ";
+			var popOut = document.getElementById("img15popout");
+			popOut.onmouseout = hideDetailedView15;
+		}
+		function hideDetailedView()
+		{
+			var im1 = document.getElementById("img1popout");
+			im1.id = "img1popin";
+			im1.innerHTML = "";
+		}
+		function hideDetailedView2()
+		{
+			var im2 = document.getElementById("img2popout");
+			im2.id = "img2popin";
+			im2.innerHTML = "";
+		}
+		function hideDetailedView3()
+		{
+			var im3 = document.getElementById("img3popout");
+			im3.id = "img3popin";
+			im3.innerHTML = "";
+		}
+		function hideDetailedView4()
+		{
+			var im4 = document.getElementById("img4popout");
+			im4.id = "img4popin";
+			im4.innerHTML = "";
+		}
+		
+		function hideDetailedView5()
+		{
+			var im5 = document.getElementById("img5popout");
+			im5.id = "img5popin";
+			im5.innerHTML = "";
+		}
+		function hideDetailedView6()
+		{
+			var im6 = document.getElementById("img6popout");
+			im6.id = "img6popin";
+			im6.innerHTML = "";
+		}
+		function hideDetailedView7()
+		{
+			var im7 = document.getElementById("img7popout");
+			im7.id = "img7popin";
+			im7.innerHTML = "";
+		}
+		function hideDetailedView8()
+		{
+			var im8 = document.getElementById("img8popout");
+			im8.id = "img8popin";
+			im8.innerHTML = "";
+		}
+		function hideDetailedView9()
+		{
+			var im9 = document.getElementById("img9popout");
+			im9.id = "img9popin";
+			im9.innerHTML = "";
+		}
+		function hideDetailedView10()
+		{
+			var im10 = document.getElementById("img10popout");
+			im10.id = "img10popin";
+			im10.innerHTML = "";
+		}
+		function hideDetailedView11()
+		{
+			var im11 = document.getElementById("img11popout");
+			im11.id = "img11popin";
+			im11.innerHTML = "";
+		}
+		function hideDetailedView12()
+		{
+			var im12 = document.getElementById("img12popout");
+			im12.id = "img12popin";
+			im12.innerHTML = "";
+		}
+		function hideDetailedView13()
+		{
+			var im13 = document.getElementById("img13popout");
+			im13.id = "img13popin";
+			im13.innerHTML = "";
+		}
+		function hideDetailedView14()
+		{
+			var im14 = document.getElementById("img14popout");
+			im14.id = "img14popin";
+			im14.innerHTML = "";
+		}
+		function hideDetailedView15()
+		{
+			var im15 = document.getElementById("img15popout");
+			im15.id = "img15popin";
+			im15.innerHTML = "";
+		}
+		
+	</script>
+</head>
+<body onload="initPopout(); initPopout2(); initPopout3(); initPopout4(); initPopout5(); initPopout6(); initPopout7(); initPopout8(); initPopout9(); initPopout10(); initPopout11(); initPopout12(); initPopout13(); initPopout14(); initPopout15();">
+<table>
+	<caption>Your Results:</caption>
+	<tbody>
+	<tr>
+		<td>
+			<img id="image1" src="aprilla/pic1thumb.jpg"><div id = "img1popin"></div>
+		</td>
+		<td>
+			<img id="image2" src="aprilla/pic2thumb.jpg"><div id = "img2popin"></div>
+		</td>
+		<td>
+			<img id="image3" src="aprilla/pic3thumb.jpg"><div id = "img3popin"></div>
+		</td>
+		<td>
+			<img id="image4" src="aprilla/pic4thumb.jpg"><div id = "img4popin"></div>
+		</td>
+		<td>
+			<img id="image5" src="aprilla/pic5thumb.jpg"><div id = "img5popin"></div>
+		</td>
+		<td>
+			<img id="image6" src="aprilla/pic6thumb.jpg"><div id = "img6popin"></div>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<img id="image7" src="aprilla/pic7thumb.jpg"><div id = "img7popin"></div>
+		</td>
+		<td>
+			<img id="image8" src="aprilla/pic8thumb.jpg"><div id = "img8popin"></div>
+		</td>
+		<td>
+			<img id="image9" src="aprilla/pic9thumb.jpg"><div id = "img9popin"></div>
+		</td>
+		<td>
+			<img id="image10" src="aprilla/pic10thumb.jpg"><div id = "img10popin"></div>
+		</td>
+		<td>
+			<img id="image11" src="aprilla/pic11thumb.jpg"><div id = "img11popin"></div>
+		</td>
+		<td>
+			<img id="image12" src="aprilla/pic12thumb.jpg"><div id = "img12popin"></div>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<img id="image13" src="aprilla/pic13thumb.jpg"><div id = "img13popin"></div>
+		</td>
+		<td>
+			<img id="image14" src="aprilla/pic14thumb.jpg"><div id = "img14popin"></div>
+		</td>
+		<td>
+			<img id="image15" src="aprilla/pic15thumb.jpg"><div id = "img15popin"></div>
+		</td>
+	</tr>
+	</tbody>
+</table>
+<br>
+Search the art database using the fields below.
+<form method="post" action="index1.html">
+	<pre>
+First Name
+<input type="text" name="firstname">
+<br>
+Last Name
+<input type="text" name="lastname">
+<br>
+<input type="submit" value="SEARCH">
+	</pre>
+</form>
+</body>
+</html>
