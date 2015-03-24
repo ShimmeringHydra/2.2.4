@@ -318,7 +318,7 @@ Version 12/19/2013
 		{
 			var im9 = document.getElementById("img9popin");
 			im9.id = "img9popout";
-			im9.innerHTML = "<br /><TABLE><TR><TH rowspan='3'><img src='aprilla/pic9.jpg' width='250'><TH align='left'>Artist's Name: <TH align='left'>Aprill Aronie<TR><TH align='left'>File Name: <TH align='left'>pic9.jpg<TR></TABLE> ";
+			im9.innerHTML = "<br /><TABLE><TR><TH rowspan='3'><img src='aprilla/pic9.jpg' width='250' height='250'><TH align='left'>Artist's Name: <TH align='left'>Aprill Aronie<TR><TH align='left'>File Name: <TH align='left'>pic9.jpg<TR></TABLE> ";
 			var popOut = document.getElementById("img9popout");
 			popOut.onmouseout = hideDetailedView9;
 		}
