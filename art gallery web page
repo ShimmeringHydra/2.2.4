@@ -342,7 +342,7 @@ Version 12/19/2013
 		{
 			var im12 = document.getElementById("img12popin");
 			im12.id = "img12popout";
-			im12.innerHTML = "<br /><TABLE><TR><TH rowspan='3'><img src='aprilla/pic12.jpg' width='250'><TH align='left'>Artist's Name: <TH align='left'>Aprill Aronie<TR><TH align='left'>File Name: <TH align='left'>pic12.jpg<TR></TABLE> ";
+			im12.innerHTML = "<br /><TABLE><TR><TH rowspan='3'><img src='aprilla/pic12.jpg' width='250' height='250'><TH align='left'>Artist's Name: <TH align='left'>Aprill Aronie<TR><TH align='left'>File Name: <TH align='left'>pic12.jpg<TR></TABLE> ";
 			var popOut = document.getElementById("img12popout");
 			popOut.onmouseout = hideDetailedView12;
 		}
