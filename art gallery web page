@@ -7,7 +7,10 @@ Version 12/19/2013
 
 <html>
 <head>
-
+if (!$_SESSION['cart'])
+	{
+	$_SESSION['cart'] = []
+	}
 	<style = "text/css">
 		#img1popout {
 			z-index: 5;
