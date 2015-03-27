@@ -7,7 +7,10 @@ Version 12/19/2013
 
 <html>
 <head>
-
+if (!$_SESSION['cart'])
+	{
+	$_SESSION['cart'] = []
+	}
 	<style = "text/css">
 		#img1popout {
 			z-index: 5;
@@ -256,6 +259,7 @@ Version 12/19/2013
 			im1.id = "img1popout";
 			im1.innerHTML = "<br /><TABLE><TR><TH rowspan='3'><img src='aprilla/pic1.jpg' width='250'><TH align='left'>Artist's Name: <TH align='left'>Aprill Aronie<TR><TH align='left'>File Name: <TH align='left'>pic1.jpg<TR></TABLE> ";
 			var popOut = document.getElementById("img1popout");
+			<button type='button' onclick='$_SESSION['cart'] =+ 0 >Add to cart</button>;
 			popOut.onmouseout = hideDetailedView;
 		}
 		function showDetailedView2()
@@ -264,6 +268,7 @@ Version 12/19/2013
 			im2.id = "img2popout";
 			im2.innerHTML = "<br /><TABLE><TR><TH rowspan='3'><img src='aprilla/pic2.jpg' width='250'><TH align='left'>Artist's Name: <TH align='left'>Aprill Aronie<TR><TH align='left'>File Name: <TH align='left'>pic2.jpg<TR></TABLE> ";
 			var popOut = document.getElementById("img2popout");
+			<button type='button' onclick='$_SESSION['cart'] =+ 1 >Add to cart</button>;
 			popOut.onmouseout = hideDetailedView2;
 		}
 		function showDetailedView3()
@@ -272,6 +277,7 @@ Version 12/19/2013
 			im3.id = "img3popout";
 			im3.innerHTML = "<br /><TABLE><TR><TH rowspan='3'><img src='aprilla/pic3.jpg' width='250'><TH align='left'>Artist's Name: <TH align='left'>Aprill Aronie<TR><TH align='left'>File Name: <TH align='left'>pic3.jpg<TR></TABLE> ";
 			var popOut = document.getElementById("img3popout");
+			<button type='button' onclick='$_SESSION['cart'] =+ 2 >Add to cart</button>;
 			popOut.onmouseout = hideDetailedView3;
 		}
 		function showDetailedView4()
@@ -280,6 +286,7 @@ Version 12/19/2013
 			im4.id = "img4popout";
 			im4.innerHTML = "<br /><TABLE><TR><TH rowspan='3'><img src='aprilla/pic4.jpg' width='250'><TH align='left'>Artist's Name: <TH align='left'>Aprill Aronie<TR><TH align='left'>File Name: <TH align='left'>pic4.jpg<TR></TABLE> ";
 			var popOut = document.getElementById("img4popout");
+			<button type='button' onclick='$_SESSION['cart'] =+ 3 >Add to cart</button>;
 			popOut.onmouseout = hideDetailedView4;					
 		}
 		function showDetailedView5() 
@@ -288,6 +295,7 @@ Version 12/19/2013
 			im5.id = "img5popout";
 			im5.innerHTML = "<br /><TABLE><TR><TH rowspan='3'><img src='aprilla/pic5.jpg' width='250'><TH align='left'>Artist's Name: <TH align='left'>Aprill Aronie<TR><TH align='left'>File Name: <TH align='left'>pic5.jpg<TR></TABLE> ";
 			var popOut = document.getElementById("img5popout");
+			<button type='button' onclick='$_SESSION['cart'] =+ 4 >Add to cart</button>;
 			popOut.onmouseout = hideDetailedView5;
 		}
 		function showDetailedView6() 
@@ -296,6 +304,7 @@ Version 12/19/2013
 			im6.id = "img6popout";
 			im6.innerHTML = "<br /><TABLE><TR><TH rowspan='3'><img src='aprilla/pic6.jpg' width='250'><TH align='left'>Artist's Name: <TH align='left'>Aprill Aronie<TR><TH align='left'>File Name: <TH align='left'>pic6.jpg<TR></TABLE> ";
 			var popOut = document.getElementById("img6popout");
+			<button type='button' onclick='$_SESSION['cart'] =+ 5 >Add to cart</button>;
 			popOut.onmouseout = hideDetailedView6;
 		}
 		function showDetailedView7() 
@@ -304,6 +313,7 @@ Version 12/19/2013
 			im7.id = "img7popout";
 			im7.innerHTML = "<br /><TABLE><TR><TH rowspan='3'><img src='aprilla/pic7.jpg' width='250' height='250'><TH align='left'>Artist's Name: <TH align='left'>Aprill Aronie<TR><TH align='left'>File Name: <TH align='left'>pic7.jpg<TR></TABLE> ";
 			var popOut = document.getElementById("img7popout");
+			<button type='button' onclick='$_SESSION['cart'] =+ 6 >Add to cart</button>;
 			popOut.onmouseout = hideDetailedView7;
 		}
 		function showDetailedView8() 
@@ -312,6 +322,7 @@ Version 12/19/2013
 			im8.id = "img8popout";
 			im8.innerHTML = "<br /><TABLE><TR><TH rowspan='3'><img src='aprilla/pic8.jpg' width='250'><TH align='left'>Artist's Name: <TH align='left'>Aprill Aronie<TR><TH align='left'>File Name: <TH align='left'>pic8.jpg<TR></TABLE> ";
 			var popOut = document.getElementById("img8popout");
+			<button type='button' onclick='$_SESSION['cart'] =+ 7 >Add to cart</button>;
 			popOut.onmouseout = hideDetailedView8;
 		}
 		function showDetailedView9() 
@@ -320,6 +331,7 @@ Version 12/19/2013
 			im9.id = "img9popout";
 			im9.innerHTML = "<br /><TABLE><TR><TH rowspan='3'><img src='aprilla/pic9.jpg' width='250' height='250'><TH align='left'>Artist's Name: <TH align='left'>Aprill Aronie<TR><TH align='left'>File Name: <TH align='left'>pic9.jpg<TR></TABLE> ";
 			var popOut = document.getElementById("img9popout");
+			<button type='button' onclick='$_SESSION['cart'] =+ 8 >Add to cart</button>;
 			popOut.onmouseout = hideDetailedView9;
 		}
 		function showDetailedView10() 
@@ -328,6 +340,7 @@ Version 12/19/2013
 			im10.id = "img10popout";
 			im10.innerHTML = "<br /><TABLE><TR><TH rowspan='3'><img src='aprilla/pic10.jpg' width='250'><TH align='left'>Artist's Name: <TH align='left'>Aprill Aronie<TR><TH align='left'>File Name: <TH align='left'>pic10.jpg<TR></TABLE> ";
 			var popOut = document.getElementById("img10popout");
+			<button type='button' onclick='$_SESSION['cart'] =+ 9 >Add to cart</button>;
 			popOut.onmouseout = hideDetailedView10;
 		}
 		function showDetailedView11() 
@@ -336,6 +349,7 @@ Version 12/19/2013
 			im11.id = "img11popout";
 			im11.innerHTML = "<br /><TABLE><TR><TH rowspan='3'><img src='aprilla/pic11.jpg' width='250'><TH align='left'>Artist's Name: <TH align='left'>Aprill Aronie<TR><TH align='left'>File Name: <TH align='left'>pic11.jpg<TR></TABLE> ";
 			var popOut = document.getElementById("img11popout");
+			<button type='button' onclick='$_SESSION['cart'] =+ 10 >Add to cart</button>;
 			popOut.onmouseout = hideDetailedView11;
 		}
 		function showDetailedView12() 
@@ -344,6 +358,7 @@ Version 12/19/2013
 			im12.id = "img12popout";
 			im12.innerHTML = "<br /><TABLE><TR><TH rowspan='3'><img src='aprilla/pic12.jpg' width='250' height='250'><TH align='left'>Artist's Name: <TH align='left'>Aprill Aronie<TR><TH align='left'>File Name: <TH align='left'>pic12.jpg<TR></TABLE> ";
 			var popOut = document.getElementById("img12popout");
+			<button type='button' onclick='$_SESSION['cart'] =+ 11 >Add to cart</button>;
 			popOut.onmouseout = hideDetailedView12;
 		}
 		function showDetailedView13() 
@@ -352,6 +367,7 @@ Version 12/19/2013
 			im13.id = "img13popout";
 			im13.innerHTML = "<br /><TABLE><TR><TH rowspan='3'><img src='aprilla/pic13.jpg' width='250'><TH align='left'>Artist's Name: <TH align='left'>Aprill Aronie<TR><TH align='left'>File Name: <TH align='left'>pic13.jpg<TR></TABLE> ";
 			var popOut = document.getElementById("img13popout");
+			<button type='button' onclick='$_SESSION['cart'] =+ 12 >Add to cart</button>;
 			popOut.onmouseout = hideDetailedView13;
 		}
 		function showDetailedView14() 
@@ -360,6 +376,7 @@ Version 12/19/2013
 			im14.id = "img14popout";
 			im14.innerHTML = "<br /><TABLE><TR><TH rowspan='3'><img src='aprilla/pic14.jpg' width='250'><TH align='left'>Artist's Name: <TH align='left'>Aprill Aronie<TR><TH align='left'>File Name: <TH align='left'>pic14.jpg<TR></TABLE> ";
 			var popOut = document.getElementById("img14popout");
+			<button type='button' onclick='$_SESSION['cart'] =+ 13 >Add to cart</button>;
 			popOut.onmouseout = hideDetailedView14;
 		}
 		function showDetailedView15() 
@@ -368,6 +385,7 @@ Version 12/19/2013
 			im15.id = "img15popout";
 			im15.innerHTML = "<br /><TABLE><TR><TH rowspan='3'><img src='aprilla/pic15.jpg' width='250'><TH align='left'>Artist's Name: <TH align='left'>Aprill Aronie<TR><TH align='left'>File Name: <TH align='left'>pic15.jpg<TR></TABLE> ";
 			var popOut = document.getElementById("img15popout");
+			<button type='button' onclick='$_SESSION['cart'] =+ 14 >Add to cart</button>;
 			popOut.onmouseout = hideDetailedView15;
 		}
 		function hideDetailedView()
@@ -533,6 +551,7 @@ Last Name
 <br>
 <input type="submit" value="SEARCH">
 	</pre>
+<TH align='right'>Click <a href='purchase_page.php'>here to check out</a>.</TH><br />;
 </form>
 </body>
 </html>
