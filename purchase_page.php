@@ -7,7 +7,7 @@
  * @version 2014.7.30
  */
  
-/* 
+ /* 
 This block allows our program to access the MySQL database.
 Elaborated on in 2.2.3.
  */
@@ -38,6 +38,8 @@ else
 	echo "Or click <a href='222account_creationB.php'>here to create an artist account</a>.<br />";
 	echo "you need to be logged in to purchase posters.<br />"
 }
+function display_table($artistID, $image_info_table, $dbname, $firstName)
+{
 echo "<TABLE><CAPTION>Your Cart:</CAPTION>";
 $closed_tr = 0; // flag, used to determine if we are at the end of a row when the loop terminates
 $num_images = mysql_num_rows($image_info_table)
