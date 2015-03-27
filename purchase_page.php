@@ -36,7 +36,7 @@ else
 {
 	echo "Click <a href='222artist_portalB.php'>here to log in as an artist</a>.<br />";
 	echo "Or click <a href='222account_creationB.php'>here to create an artist account</a>.<br />";
-	echo "you need to be logged in to purchase posters."
+	echo "you need to be logged in to purchase posters.<br />"
 }
 echo "<TABLE><CAPTION>Your Cart:</CAPTION>";
 $closed_tr = 0; // flag, used to determine if we are at the end of a row when the loop terminates
@@ -75,7 +75,7 @@ if ($image_info_table)
 	if ($closed_tr == 0) echo "</TR>"; // Appends a close tag for the TR element if the loop did not terminate at a row end.
 	echo "</TABLE>";
 }
-echo "<TH align='center'>Total cost: $" . $poster_count . "0";
+echo "<TH align='center'>Total cost: $" . $poster_count . "0</TH><br />";
 echo "<button type='button' onclick='$cart = []'>Clear cart</button>"
 echo "<TH align='right'>Click <a href='221indexB.html'>here to return to the gallery</a>.</TH><br />";
 ?>
