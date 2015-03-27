@@ -36,7 +36,7 @@ else
 {
 	echo "Click <a href='222artist_portalB.php'>here to log in as an artist</a>.<br />";
 	echo "Or click <a href='222account_creationB.php'>here to create an artist account</a>.<br />";
-	echo "you need to be logged in to purchase posters.<br />"
+	echo "you need to be logged in to purchase posters.<br />";
 }
 function display_table($artistID, $image_info_table, $dbname, $firstName)
 {
@@ -78,6 +78,6 @@ if ($image_info_table)
 	echo "</TABLE>";
 }
 echo "<TH align='center'>Total cost: $" . $poster_count . "0</TH><br />";
-echo "<button type='button' onclick='$cart = []'>Clear cart</button>"
+echo "<button type='button' onclick='$cart = []'>Clear cart</button>";
 echo "<TH align='right'>Click <a href='221indexB.html'>here to return to the gallery</a>.</TH><br />";
 ?>
